@@ -1,0 +1,26 @@
+:root{
+  --primary:#2D9A86;
+  --accent:#EEFE6D;
+  --white:#ffffff;
+  --dark:#0A0A14;
+  --gray:#151521;
+  --light-gray:#1E1E2D;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:'SF Pro Display', -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+  background:linear-gradient(135deg,#0A0A14 0%,#151521 100%);
+  color:var(--white);
+}
+
+/* общий контейнер под мобильный макет */
+.page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 20px 100px;
+  position: relative;
+  min-height: 100vh;
+}

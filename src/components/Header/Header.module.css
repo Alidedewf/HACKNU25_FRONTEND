@@ -1,0 +1,20 @@
+.header{
+    display:flex;justify-content:space-between;align-items:center;
+    margin-bottom:24px;padding-top:10px;
+  }
+  .logo{
+    font-size:24px;font-weight:800;
+    background:linear-gradient(90deg,var(--primary),var(--accent));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    letter-spacing:-0.5px;
+  }
+  .profile{
+    width:40px;height:40px;border-radius:50%;
+    background:linear-gradient(135deg,var(--primary),var(--accent));
+    display:flex;align-items:center;justify-content:center;cursor:pointer;
+    box-shadow:0 0 10px rgba(46,154,134,.7),0 0 20px rgba(46,154,134,.5);
+    transition:.2s;
+  }
+  .profile i{color:var(--dark);font-size:18px}
+  .profile:active{transform:scale(.96)}
+  

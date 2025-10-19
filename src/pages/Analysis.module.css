@@ -1,0 +1,41 @@
+.toolbar{
+    display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:12px;
+  }
+  .pills{display:flex;gap:8px}
+  .pill{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+    color:#fff; border-radius:20px; padding:6px 12px; cursor:pointer;
+  }
+  .pill:hover{background:rgba(255,255,255,.14)}
+  .active{color:#0A0A14;background:linear-gradient(135deg,var(--primary),var(--accent)); border-color:transparent}
+  
+  .kpis{display:flex;gap:12px}
+  .kpi{background:var(--gray);border-radius:12px;padding:10px 12px;border:1px solid rgba(255,255,255,.05)}
+  .kpiLabel{opacity:.7;font-size:12px;margin-bottom:2px}
+  .kpiValue{font-weight:800}
+  .pos{color:var(--accent)}
+  .neg{color:#ff6b6b}
+  
+  .card{
+    background:var(--gray);border-radius:20px;padding:16px;margin-bottom:16px;
+    border:1px solid rgba(255,255,255,.05);
+  }
+  .cardHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+  .cardTitle{font-weight:700;display:flex;align-items:center;gap:8px}
+  
+
+  .chartBox{height:220px}
+  .chartBoxWide{height:240px}
+  
+  .legend{display:flex;flex-direction:column;gap:8px; margin-top: 20px;}
+  .legendRow{display:flex;align-items:center;gap:8px;justify-content:space-between}
+  .legendDot{width:10px;height:10px;border-radius:50%}
+  .legendName{opacity:.9}
+  .legendValue{opacity:.9;font-weight:600}
+  
+  .insight{background:var(--light-gray);border-radius:12px;padding:12px;line-height:1.5;margin-bottom:10px;border:1px solid rgba(255,255,255,.05)}
+  .tipList{display:flex;flex-direction:column;gap:6px}
+  .tip{opacity:.9}
+  .tip i{color:var(--accent);margin-right:6px}
+  
