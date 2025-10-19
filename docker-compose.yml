@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: .
+    container_name: zaman-frontend
+    ports:
+      - "3000:80"
+    restart: always
+    environment:
+      - NODE_ENV=production
+    # если есть env-файл с переменными API и т.п.
+    # env_file:
+    #   - .env
+
+# при желании можно сразу добавить backend и postgres:
+#  backend:
+#    build: ./backend
+#    container_name: zaman-backend
+#    ports:
+#      - "8000:8000"
+#    depends_on:
+#      - db
+#
+#  db:
+#    image: postgres:15
+#    container_name: zaman-db
+#    restart: always
+#    environment:
+#      POSTGRES_USER: postgres
+#      POSTGRES_PASSWORD: postgres
+#      POSTGRES_DB: smartmatch
+#    volumes:
+#      - pgdata:/var/lib/postgresql/data
+#
+#volumes:
+#  pgdata:
